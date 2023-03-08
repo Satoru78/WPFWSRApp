@@ -1,0 +1,23 @@
+﻿<Window x:Class="WPFWSRApp.Views.Windows.Authorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFWSRApp.Views.Windows"
+        mc:Ignorable="d"
+        Title="Стражник  -  Авторизация" Height="400" Width="400">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Авторизация" HorizontalAlignment="Center" FontSize="30"></TextBlock>
+            <TextBlock Text="Выбрать отдел"></TextBlock>
+            <ComboBox Name="cmdDepartament" ItemsSource="{Binding Departaments}" SelectedItem="{Binding Emploees.Departament}" DisplayMemberPath="Title" Width="210"></ComboBox>
+            <TextBlock Text="Код"></TextBlock>
+            <TextBox Name="txbCode" Width="210"></TextBox>
+            <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+            <Button Name="btnLogin" Click="btnLogin_Click" Content="Войти" Width="100" ></Button>
+                <Button Name="btnCancel" Click="btnCancel_Click" Content="Отмена" Width="100" Margin="10,0,0,0"></Button>
+                
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
