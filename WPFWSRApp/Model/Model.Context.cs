@@ -29,5 +29,6 @@ namespace WPFWSRApp.Model
         public virtual DbSet<Employees> Employees { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<User> User { get; set; }
+        public virtual DbSet<Visitor> Visitor { get; set; }
     }
 }

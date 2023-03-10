@@ -4,6 +4,14 @@
              xmlns:local="clr-namespace:WPFWSRApp"
              StartupUri="Views/Windows/Authorization.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Label">
+            <Setter Property="Background" Value="Orange"></Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+           
+        </Style>
+        <Style  x:Key="AllBorder" TargetType="Border">
+            <Setter Property="CornerRadius" Value="10"></Setter>
+        </Style>
     </Application.Resources>
 </Application>

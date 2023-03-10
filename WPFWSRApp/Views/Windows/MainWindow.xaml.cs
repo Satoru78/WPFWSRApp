@@ -27,7 +27,7 @@ namespace WPFWSRApp
         public MainWindow(Employees employees)
         {
             InitializeComponent();
-            MainFrame.Navigate(new OrderDataViewPage());
+            MainFrame.Navigate(new OrderDataViewPage(new Visitor()));
             this.Employees = employees;
             tblNameUser.Text = $"Пользователь: {employees.FirstName} {employees.LastName} {employees.Patronymic}";
         }
